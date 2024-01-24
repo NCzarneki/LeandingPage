@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>NC - Portifólio</title>
+</head>
+
+<body>
+  <header class="banner">
+    <ul>
+      <li><a href="#midia_sociais">Contato</a></li>
+      <li><a href="#apresentacao__titulo">Sobre Mim</a></li>
+      <li><a href="#apresentacao__titulo_skills">Skills</a></li>
+    </ul>
+    <div class="cabecalho">
+      <h1> Olá! Seja bem-vindo(a)!👋😊 Sou a Natiele Czarneki.</h1>
+      <p>Uma estudante apaixonada por tecnologia e programação.</p>
+    </div>
+  </header>
+  <main id="apresentacao">
+    <section id="apresentacao__conteudo">
+      <h2 id="apresentacao__titulo">Sobre Mim</h2>
+      <p>
+        Graduada em Análise e Desenvolvimento de Sistemas pelo Instituto Federal do Paraná (IFPR). Atualmente trabalho como técnica administrativa na Universidade Estadual do Centro-Oesto do PR. Tive meu primeiro contato com programação por meio da faculdade e desde então decidi me dedicar e fazer a minha transição de carreira.<br>
+        
+        <br>Recém-formada com conhecimentos em linguagens de programação, banco de dados, desenvolvimento web, entre outras.
+        Tenho desenvolvido minhas skills para atuar como desenvolvedora Full-Stack. Para isso, tenho focado meu
+        desenvolvimento profissional fazendo cursos e pequenos projetos.<br>
+
+        <br>Algumas habilidades adquiridas ao longo do processo: HTML, CSS, JavaScript, React, Node.js, Java,
+        acessibilidade, consumo de APIs e Github.
+      </p>
+      <div>
+    </section>
+    <img src="./img/logo.png" class="foto1">
+  </main>
+  <div class="apresentacao_skills">
+    <h2 id="apresentacao__titulo_skills">Skills</h2>
+    <div class="polaroid">
+      <img src="./img/css-3.png">
+      <div class="container">
+        <p>CSS</p>
+      </div>
+    </div>
+    <div class="polaroid">
+      <img src="./img/html-5.png">
+      <div class="container">
+        <p>HTML</p>
+      </div>
+    </div>
+    <div class="polaroid">
+      <img src="./img/java.png">
+      <div class="container">
+        <p>Java</p>
+      </div>
+    </div>
+    <div class="polaroid">
+      <img src="./img/js.png">
+      <div class="container">
+        <p>JavaScript</p>
+      </div>
+    </div>
+    <div class="polaroid">
+      <img src="./img/mysql.png">
+      <div class="container">
+        <p>MySQL</p>
+      </div>
+    </div>
+    <div class="polaroid">
+      <img src="./img/python.png">
+      <div class="container">
+        <p>Python</p>
+      </div>
+    </div>
+  </div>
+  <div class="contato">
+    <h2 id="apresentacao__titulo">Entre em contato comigo:</h2>
+    <div id="midia_sociais">
+      <button><a href="https://github.com/NCzarneki" target="_blank"><img src="./img/github.png"></a></button>
+      <button><a href="https://linkedin.com/in/natiele-czarneki" target="_blank"><img
+            src="./img/linkedin.png"></a></button>
+      <button><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl" target="_blank"><img
+            src="./img/e-mail.png"></a></button>
+    
+    </div>
+  </div>
+  <footer class="banner">
+    <h3>Desenvolvido por NC.</h3>
+  </footer>
+  <script>
+    function typeWriter(e) {
+      const textoArray = e.innerHTML.split('')
+      e.innerHTML = ''
+      textoArray.forEach((letra, i) => {
+        setTimeout(() => e.innerHTML += letra, 90 * i)
+      });
+    }
+    const texto = document.querySelector('h1')
+    typeWriter(texto)
+  </script>
+</body>
+
+</html>
